@@ -1,0 +1,276 @@
+/* Tailwind CSS Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Imports */
+@import 'tailwindcss';
+@source "../views/";
+@source "../../app/";
+
+/* Theme Variables */
+@theme {
+  --color-proline-dark: #1e1c1d;
+  --color-proline-gray: #e6e7de;
+  --color-proline-persimmon: #a93e10;
+  --color-proline-natural-sienna: #b69d70;
+  --color-proline-phthalo-green: #012b26;
+  --color-proline-light-gray: #e6e7e0;
+  --color-proline-soft-green: #b6bca7;
+  --color-proline-cedar: #797168;
+  --color-proline-linen: #f0e8d8;
+}
+
+/* Font Faces */
+@font-face {
+  font-family: 'At Hauss';
+  src: url('../fonts/At\ Hauss\ Web\ Fonts/Web Fonts/AtHauss-Regular.woff2')
+      format('woff2'),
+    url('../fonts/At\ Hauss\ Web\ Fonts/Web Fonts/AtHauss-Regular.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Maxeville';
+  src: url('../fonts/Maxeville\ Web\ Fonts/Maxeville/Maxeville-Regular.woff2')
+      format('woff2'),
+    url('../fonts/Maxeville\ Web\ Fonts/Maxeville/Maxeville-Regular.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+body {
+  font-family: 'At Hauss', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Maxeville', sans-serif;
+}
+
+a {
+  font-family: 'Maxeville', sans-serif;
+}
+
+a:where(:not(.wp-element-button)) {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.proline-max-w-half {
+  @apply max-w-full sm:max-w-1/2;
+}
+
+.proline-max-w-one-quarter {
+  @apply max-w-full sm:max-w-1/4;
+}
+
+:where(.wp-block-columns) {
+  margin-bottom: 0rem;
+}
+
+.wpcf7-not-valid-tip {
+  color: var(--color-proline-persimmon);
+  font-size: 0.75em;
+  font-weight: normal;
+  display: block;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 0.2em 1em;
+  text-align: center;
+  border-color: var(--color-proline-persimmon) !important;
+  color: var(--color-proline-gray);
+  background-color: var(--color-proline-persimmon);
+}
+
+#main {
+  background-color: var(--color-proline-gray);
+}
+
+/* Navigation Styles */
+.proline-megamenu-list {
+  list-style: none;
+  padding-left: 0rem;
+}
+
+.proline-megamenu-list li {
+  break-inside: avoid;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.proline-megamenu-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0rem;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('../images/layout/bullet-iso.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Page Header */
+.page-header > h1 {
+  display: none;
+}
+
+/* List Styles */
+.proline-custom-list-top-right-bullet {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1rem;
+}
+
+.proline-custom-list-top-right-bullet li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.proline-custom-list-top-right-bullet li::before {
+  content: '';
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('../images/layout/bullet-iso-green.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Section Styles */
+
+:where(figure){
+  margin:0;
+}
+
+.proline-section-no-margin {
+  margin: 0;
+}
+
+.proline-section-padding {
+  @apply py-20 px-10 sm:px-10;
+}
+
+.proline-header-with-right-image-padding {
+  @apply pt-0 pr-10 pb-0 pl-10 sm:pl-10 sm:pr-0;
+}
+
+.proline-section-border-bottom-dark {
+  border-bottom: 1px solid var(--color-proline-dark);
+}
+
+.wp-block-columns.wp-container-core-columns-is-layout-3 {
+  gap: 8px;
+}
+
+.proline-section-linen {
+  background-color: var(--color-proline-linen);
+  color: var(--color-proline-dark);
+}
+
+.proline-section-dark {
+  background-color: var(--color-proline-dark);
+  color: var(--color-proline-gray);
+}
+
+.proline-section-cedar {
+  background-color: var(--color-proline-cedar);
+  color: var(--color-proline-dark);
+}
+
+.proline-section-jumbo-text {
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.proline-section-large-text {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.proline-section-phthalo-green {
+  background-color: var(--color-proline-phthalo-green);
+  color: var(--color-proline-soft-green);
+}
+
+.proline-section-light-gray {
+  background-color: var(--color-proline-light-gray);
+  color: var(--color-proline-dark);
+}
+
+/* Button Styles */
+.proline-section-no-background-button a {
+  background-color: transparent;
+}
+
+.proline-section-dark-button a {
+  margin: 1rem 0;
+  border-bottom: 1px solid var(--color-proline-gray);
+  border-radius: 0;
+}
+
+.proline-section-persimmon-button a {
+  color: var(--color-proline-persimmon);
+  margin: 1rem 0;
+  border-radius: 0;
+}
+
+.proline-section-light-gray-button a {
+  color: var(--color-proline-dark);
+  margin: 1rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-proline-phthalo-green);
+}
+
+.proline-section-cedar-button a {
+  color: var(--color-proline-dark);
+  margin: 1rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-proline-phthalo-green);
+}
+
+.proline-section-contact-button {
+  color: var(--color-proline-dark);
+  margin: 1rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-proline-dark);
+}
+
+.proline-persimmon-text {
+  color: var(--color-proline-persimmon);
+}
+
+.wp-block-gallery.has-nested-images figure.wp-block-image::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* START - This block matches the Figma design for the gallery captions. */
+/* .wp-block-image figcaption.wp-element-caption {
+  position: static !important;
+  background: none !important;
+  padding: 0.5em 0 0 !important;
+  text-align: left !important;
+}
+
+.wp-block-gallery.has-nested-images.lightbox-enabled figure.wp-block-image {
+  margin-bottom: 3rem !important;
+} */
+
+/* END - This block matches the Figma design for the gallery captions. */
