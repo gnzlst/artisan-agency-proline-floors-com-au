@@ -56,6 +56,18 @@ h6 {
   font-family: 'Maxeville', sans-serif;
 }
 
+.h-4 {
+  height: calc(var(--spacing) * 4) !important;
+}
+
+.unset-aspect-ratio img {
+  aspect-ratio: unset !important;
+}
+
+div.wp-block-woocommerce-product-collection ul li h3 {
+  text-align: left !important;
+}
+
 a {
   font-family: 'Maxeville', sans-serif;
 }
@@ -152,8 +164,8 @@ a:where(:not(.wp-element-button)) {
 
 /* Section Styles */
 
-:where(figure){
-  margin:0;
+:where(figure) {
+  margin: 0;
 }
 
 .proline-section-no-margin {

@@ -8,7 +8,7 @@ $menu = [
                 'items' => [
                     [
                         'text' => 'Shop All Luxury Vinyl Plank',
-                        'url' => '#',
+                        'url' => '/shop-all-luxury-vinyl-plank/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',

@@ -118,3 +118,27 @@ function mytheme_wrap_images_with_lightbox($content)
     return $newContent;
 }
 add_filter('the_content', 'mytheme_wrap_images_with_lightbox');
+
+add_filter('woocommerce_product_add_to_cart_text', function($text, $product) {
+    if ($product && $product->get_type() === 'simple' && !$product->is_purchasable()) {
+        return __('Learn More', 'woocommerce');
+    }
+    if ($product && $product->get_type() === 'variable' && !$product->is_purchasable()) {
+        return __('Learn More', 'woocommerce');
+    }
+    if ($product && $product->get_type() === 'external') {
+        return __('Learn More', 'woocommerce');
+    }
+    return $text;
+}, 10, 2);
+
+add_filter('woocommerce_loop_add_to_cart_link', function($html, $product) {
+    $custom_classes = 'bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
+    $html = preg_replace(
+        '/(class="[^"]*)"/',
+        '$1 ' . $custom_classes . '"',
+        $html
+    );
+    $custom_text = '<a href="#" class="mb-2 text-sm font-semibold">Order a free measure and quote</a>';
+    return $custom_text . $html;
+}, 10, 2);
