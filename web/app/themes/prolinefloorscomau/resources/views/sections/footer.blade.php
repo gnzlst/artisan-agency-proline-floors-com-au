@@ -38,11 +38,11 @@ $footerMenu = [
                 <h2 class="mb-6 text-sm font-semibold text-proline-gray uppercase">Subscribe</h2>
                 <p class="text-gray-500 dark:text-gray-400 font-medium">
                     Join our newsletter for updates on products and promotions.</p>
-                <form action="#" method="POST" class="flex flex-row space-x-4 mt-6">
+                <form action="#" method="POST" class="flex flex-col sm:flex-row sm:space-x-4 mt-6 w-full">
                     <input type="email" name="email" placeholder="Your Email Here"
-                        class="flex-1 px-4 py-2 text-gray-900 bg-gray-100 border border-gray-300 bg-proline-dark text-proline-gray dark:border-gray-600 dark:placeholder-gray-400">
+                        class="flex-1 px-4 py-2 text-gray-900 bg-gray-100 border border-gray-300 bg-proline-dark text-proline-gray dark:border-gray-600 dark:placeholder-gray-400 w-full mb-2 sm:mb-0">
                     <button type="submit"
-                        class="bg-proline-dark border-1 border-proline-gray text-proline-gray px-4 py-2 hover:bg-black uppercase cursor-pointer">
+                        class="bg-proline-dark border-1 border-proline-gray text-proline-gray px-4 py-2 hover:bg-black uppercase cursor-pointer w-full sm:w-auto">
                         Subscribe
                     </button>
                 </form>
@@ -98,26 +98,22 @@ $footerMenu = [
                 <div class="flex space-x-5 rtl:space-x-reverse items-middle">
                     <a href="https://www.facebook.com/prolinefloorsaustralia"
                         class="text-gray-400 hover:text-gray-900 dark:hover:text-white" target="_blank">
-                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/facebook-logo.png')" class="h-4"
-                        alt="Facebook" />
+                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/facebook-logo.png')" class="h-4" alt="Facebook" />
                         <span class="sr-only">Facebook page</span>
                     </a>
                     <a href="https://www.instagram.com/prolinefloors/"
                         class="text-gray-400 hover:text-gray-900 dark:hover:text-white" target="_blank">
-                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/instagram-logo.png')" class="h-4"
-                        alt="Instagram" />
+                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/instagram-logo.png')" class="h-4" alt="Instagram" />
                         <span class="sr-only">Instagram page</span>
                     </a>
                     <a href="https://www.linkedin.com/company/proline-floors/"
                         class="text-gray-400 hover:text-gray-900 dark:hover:text-white" target="_blank">
-                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/linkedin-logo.png')" class="h-4"
-                        alt="LinkedIn" />
+                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/linkedin-logo.png')" class="h-4" alt="LinkedIn" />
                         <span class="sr-only">LinkedIn page</span>
                     </a>
                     <a href="https://www.youtube.com/channel/UCLH68GbsSsxoJm1JgfS-wKA"
                         class="text-gray-400 hover:text-gray-900 dark:hover:text-white" target="_blank">
-                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/youtube-logo.png')" class="h-4"
-                        alt="YouTube" />
+                        <img class="h-auto max-w-full" src="@asset('resources/images/layout/youtube-logo.png')" class="h-4" alt="YouTube" />
                         <span class="sr-only">YouTube page</span>
                     </a>
                 </div>
