@@ -7,8 +7,11 @@ export default defineConfig({
   base: '/app/themes/prolinefloorscomau/public/build/',
   build: {
     outDir: 'public/build', // Output directory for build files
-    assetsDir: 'assets',    // Directory for assets (e.g., images, CSS, JS)
-    publicDir: false,       // Disable copying static assets to the output directory
+    assetsDir: 'assets', // Directory for assets (e.g., images, CSS, JS)
+    publicDir: false, // Disable copying static assets to the output directory
+  },
+  watch: {
+    usePolling: true,
   },
   plugins: [
     tailwindcss(),
@@ -18,6 +21,7 @@ export default defineConfig({
         'resources/js/app.js',
         'resources/css/editor.css',
         'resources/js/editor.js',
+        'resources/js/woo-blocks.js',
       ],
       refresh: true,
     }),

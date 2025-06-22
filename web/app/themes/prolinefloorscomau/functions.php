@@ -119,7 +119,7 @@ function mytheme_wrap_images_with_lightbox($content)
 }
 add_filter('the_content', 'mytheme_wrap_images_with_lightbox');
 
-add_filter('woocommerce_product_add_to_cart_text', function($text, $product) {
+add_filter('woocommerce_product_add_to_cart_text', function ($text, $product) {
     if ($product && $product->get_type() === 'simple' && !$product->is_purchasable()) {
         return __('Learn More', 'woocommerce');
     }
@@ -132,13 +132,54 @@ add_filter('woocommerce_product_add_to_cart_text', function($text, $product) {
     return $text;
 }, 10, 2);
 
-add_filter('woocommerce_loop_add_to_cart_link', function($html, $product) {
-    $custom_classes = 'bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
+add_filter('woocommerce_loop_add_to_cart_link', function ($html, $product) {
+    $custom_classes = 'proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
     $html = preg_replace(
         '/(class="[^"]*)"/',
         '$1 ' . $custom_classes . '"',
         $html
     );
-    $custom_text = '<a href="#" class="mb-2 text-sm font-semibold">Order a free measure and quote</a>';
+    $custom_text = '<div class="mb-4 text-sm font-semibold"><a href="/contact-us/" class="proline-persimmon-text">Order a free measure and quote</a></div>';
     return $custom_text . $html;
 }, 10, 2);
+
+add_action('wp_enqueue_scripts', function () {
+    $manifest_path = get_theme_file_path('public/build/manifest.json');
+    if (!file_exists($manifest_path)) {
+        return;
+    }
+    $manifest = json_decode(file_get_contents($manifest_path), true);
+    $entry = $manifest['resources/js/woo-blocks.js'] ?? null;
+    if (!$entry || !isset($entry['file'])) {
+        return;
+    }
+    $src = get_theme_file_uri('public/build/' . $entry['file']);
+    wp_enqueue_script(
+        'proline-woo-blocks',
+        $src,
+        [],
+        null,
+        true
+    );
+});
+
+add_action('rest_api_init', function () {
+    register_rest_route('proline/v1', '/product-categories/(?P<id>\\d+)', [
+        'methods' => 'GET',
+        'callback' => function ($request) {
+            $product_id = (int) $request['id'];
+            $terms = get_the_terms($product_id, 'product_cat');
+            if (is_wp_error($terms) || empty($terms)) {
+                return [];
+            }
+            return array_map(function ($term) {
+                return [
+                    'name' => $term->name,
+                    'slug' => $term->slug,
+                    'link' => get_term_link($term),
+                ];
+            }, $terms);
+        },
+        'permission_callback' => '__return_true',
+    ]);
+});

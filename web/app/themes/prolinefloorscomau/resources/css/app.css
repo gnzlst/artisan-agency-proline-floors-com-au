@@ -268,6 +268,52 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-persimmon);
 }
 
+.proline-persimmon-button-woocommerce-button {
+  color: var(--color-proline-persimmon);
+  background-color: transparent;
+  border: 1px solid var(--color-proline-persimmon);
+  padding: 0.5em 1em;
+  border-radius: 0;
+}
+
+.proline-persimmon-button-woocommerce-add-sample-button {
+  background-color: var(--color-proline-persimmon) !important;
+  padding: 0.5em 1em;
+}
+
+.wc-block-product .wp-block-post-title {
+  font-size: 1.7rem !important;
+  line-height: 1.1;
+}
+
+.wc-block-components-product-image a {
+  position: relative;
+  display: block;
+}
+
+.proline-persimmon-button-woocommerce-add-sample-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0.5rem 0;
+  background: rgba(255,255,255,0.85); /* Optional: semi-transparent background */
+  display: flex;
+  justify-content: center;
+}
+
+.proline-sample-button {
+  width: 90%;
+  margin: 0 auto;
+  background-color: transparent !important;
+}
+
+.proline-product-categories {
+  color: --var(--color-proline-dark);
+  font-size: 0.9em;
+}
+
 .wp-block-gallery.has-nested-images figure.wp-block-image::before {
   content: none !important;
   display: none !important;
