@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('WooCommerce blocks script loaded');
   var products = Array.from(
     document.querySelectorAll(
       '.wp-block-woocommerce-product-collection li.wc-block-product'
@@ -73,6 +72,46 @@ document.addEventListener('DOMContentLoaded', function () {
       button.textContent = 'Add Sample to Cart';
       button.className =
         'proline-sample-button wp-block-button__link bg-proline-light text-proline-light block text-center';
+      button.href = '#';
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        button.textContent = 'Adding...';
+        button.disabled = true;
+        var nonce =
+          typeof wc_store_api_nonce !== 'undefined' ? wc_store_api_nonce : '';
+        var headers = {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+          'X-WP-Nonce': nonce,
+        };
+        fetch('/wp-json/wc/store/cart/add-item', {
+          method: 'POST',
+          headers: headers,
+          body: JSON.stringify({
+            id: parseInt(item.productId, 10),
+            quantity: 1,
+          }),
+        })
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            if (data && !data.code) {
+              button.textContent = 'Sample added to cart!';
+              button.classList.add('bg-green-500');
+            } else {
+              button.textContent =
+                data && data.message ? data.message : 'Error';
+              button.classList.add('bg-red-500');
+              button.disabled = false;
+            }
+          })
+          .catch(function (error) {
+            button.textContent = 'Error';
+            button.classList.add('bg-red-500');
+            button.disabled = false;
+          });
+      });
       var wrapper = document.createElement('div');
       wrapper.className =
         'wp-block-button wc-block-components-product-button align-center proline-persimmon-button-woocommerce-add-sample-button';

@@ -245,7 +245,8 @@ $menu = [
             <div
                 class="flex flex-col sm:flex-row sm:items-center sm:justify-end sm:space-x-4 space-y-4 sm:space-y-0 pt-4 sm:pt-0">
                 <button
-                    class="bg-proline-dark border-1 border-proline-gray text-proline-gray px-4 py-2 hover:bg-black uppercase cursor-pointer">
+                    class="bg-proline-dark border-1 border-proline-gray text-proline-gray px-4 py-2 hover:bg-black uppercase cursor-pointer"
+                    onclick="location.href='{{ get_permalink(get_page_by_path('cart')) }}'">
                     See Cart
                 </button>
                 <button class="bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white uppercase cursor-pointer">
@@ -265,7 +266,7 @@ $menu = [
         <div class="flex flex-wrap items-center justify-between mx-auto p-4">
             <div class="flex md:order-2 space-x-3 rtl:space-x-reverse ml-auto">
                 <button class="bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white uppercase cursor-pointer"
-                  onclick="location.href='{{ get_permalink(get_page_by_path('where-to-buy')) }}'">
+                    onclick="location.href='{{ get_permalink(get_page_by_path('where-to-buy')) }}'">
                     Where to Buy
                 </button>
                 <button

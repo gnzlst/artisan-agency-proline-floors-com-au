@@ -161,6 +161,13 @@ add_action('wp_enqueue_scripts', function () {
         null,
         true
     );
+    if (function_exists('wp_create_nonce')) {
+        wp_add_inline_script(
+            'proline-woo-blocks',
+            'window.wc_store_api_nonce = "' . wp_create_nonce('wc_store_api') . '";',
+            'before'
+        );
+    }
 });
 
 add_action('rest_api_init', function () {
@@ -183,3 +190,15 @@ add_action('rest_api_init', function () {
         'permission_callback' => '__return_true',
     ]);
 });
+
+add_filter('woocommerce_store_api_disable_nonce_check', '__return_true');
+
+add_filter('woocommerce_is_purchasable', function ($purchasable, $product) {
+    if ($product && $product->is_type('simple')) {
+        $price = $product->get_price();
+        if ($price === '' || $price === null || $price == 0) {
+            return true;
+        }
+    }
+    return $purchasable;
+}, 10, 2);
