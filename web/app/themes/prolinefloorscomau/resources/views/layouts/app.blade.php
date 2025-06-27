@@ -27,9 +27,7 @@
         @include('sections.header')
 
         <main id="main" class="main">
-            <div class="max-w-screen-2xl mx-auto">
-                @yield('content')
-            </div>
+            @yield('content')
         </main>
 
         @hasSection('sidebar')
