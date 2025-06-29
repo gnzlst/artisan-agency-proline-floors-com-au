@@ -19,6 +19,7 @@
   --color-proline-soft-green: #b6bca7;
   --color-proline-cedar: #797168;
   --color-proline-linen: #f0e8d8;
+  --color-proline-burnt-sienna: #856C4F;
 }
 
 /* Font Faces */
@@ -198,6 +199,11 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-gray);
 }
 
+.proline-section-burnt-sienna {
+  background-color: var(--color-proline-burnt-sienna);
+  color: var(--color-proline-light-gray);
+}
+
 .proline-section-cedar {
   background-color: var(--color-proline-cedar);
   color: var(--color-proline-dark);
@@ -268,6 +274,10 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-persimmon);
 }
 
+.proline-dark-text {
+  color: var(--color-proline-dark);
+}
+
 .proline-section-border-bottom-light-gray {
   border-bottom: 1px solid var(--color-proline-light-gray);
 }
@@ -305,7 +315,7 @@ a:where(:not(.wp-element-button)) {
   right: 0;
   bottom: 0;
   z-index: 2;
-  padding: 0.5rem 0;
+  padding: 3px 0;
   background: rgba(255,255,255,0.85); /* Optional: semi-transparent background */
   display: flex;
   justify-content: center;
