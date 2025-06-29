@@ -268,6 +268,14 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-persimmon);
 }
 
+.proline-section-border-bottom-light-gray {
+  border-bottom: 1px solid var(--color-proline-light-gray);
+}
+
+.proline-light-gray-text {
+  color: var(--color-proline-light-gray);
+}
+
 .proline-persimmon-button-woocommerce-button {
   color: var(--color-proline-persimmon);
   background-color: transparent;
