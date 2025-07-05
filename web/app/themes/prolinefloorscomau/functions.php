@@ -202,3 +202,28 @@ add_filter('woocommerce_is_purchasable', function ($purchasable, $product) {
     }
     return $purchasable;
 }, 10, 2);
+
+add_filter('woocommerce_single_product_image_gallery_classes', function ($classes) {
+    $classes[] = 'lightbox-enabled';
+    return $classes;
+});
+
+add_filter('woocommerce_single_product_image_html', function ($html, $post_thumbnail_id) {
+    $html = preg_replace(
+        '/<a /',
+        '<a class="glightbox" data-gallery="post-gallery" ',
+        $html,
+        1
+    );
+    return $html;
+}, 10, 2);
+
+add_filter('woocommerce_single_product_image_thumbnail_html', function ($html, $post_thumbnail_id) {
+    $html = preg_replace(
+        '/<a /',
+        '<a class="glightbox" data-gallery="post-gallery" ',
+        $html,
+        1
+    );
+    return $html;
+}, 10, 2);

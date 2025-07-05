@@ -299,6 +299,11 @@ a:where(:not(.wp-element-button)) {
   padding: 0.5em 1em;
 }
 
+.proline-persimmon-button-woocommerce-brochure-button {
+  background-color: var(--color-proline-persimmon) !important;
+  padding: 0.5em 1em;
+}
+
 .wc-block-product .wp-block-post-title {
   font-size: 1.7rem !important;
   line-height: 1.1;
@@ -350,3 +355,15 @@ a:where(:not(.wp-element-button)) {
 } */
 
 /* END - This block matches the Figma design for the gallery captions. */
+
+.woocommerce-product-gallery__wrapper {
+  display: block !important;
+}
+
+.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:not(:first-child) {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  width: auto;
+  vertical-align: top;
+}
