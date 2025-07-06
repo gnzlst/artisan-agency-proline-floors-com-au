@@ -428,5 +428,10 @@ a:where(:not(.wp-element-button)) {
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link {
-  border: 0;
+  border: 0 !important;
+}
+
+.wp-block-button.wc-block-components-product-button.is-style-outline
+  .wp-block-button__link {
+  border: 0 !important;
 }
