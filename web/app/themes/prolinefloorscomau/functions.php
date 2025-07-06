@@ -76,7 +76,7 @@ add_action('wp_enqueue_scripts', 'proline_enqueue_lightbox_assets');
 
 function mytheme_wrap_images_with_lightbox($content)
 {
-    if (!is_singular() || !in_the_loop() || !is_main_query()) {
+    if (!is_singular() || !in_the_loop() || !is_main_query() || trim($content) === '') {
         return $content;
     }
 
@@ -133,6 +133,12 @@ add_filter('woocommerce_product_add_to_cart_text', function ($text, $product) {
 }, 10, 2);
 
 add_filter('woocommerce_loop_add_to_cart_link', function ($html, $product) {
+    $excluded_pages = ['maintenance-accessories', 'hybrid-flooring-accessories'];
+    foreach ($excluded_pages as $excluded) {
+        if ((is_string($excluded) && is_page($excluded)) || (is_int($excluded) && is_page($excluded))) {
+            return $html;
+        }
+    }
     $custom_classes = 'proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
     $html = preg_replace(
         '/(class="[^"]*)"/',

@@ -22,6 +22,8 @@
   --color-proline-burnt-sienna: #856c4f;
   --color-proline-dark-vanilla: #c3c2b3;
   --color-proline-silk: #e4e5dd;
+  --color-proline-artichoke: #a09b8b;
+  --color-proline-jungle: #373a02;
 }
 
 /* Font Faces */
@@ -225,6 +227,16 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-dark);
 }
 
+.proline-section-artichoke {
+  background-color: var(--color-proline-artichoke);
+  color: var(--color-proline-light-gray);
+}
+
+.proline-section-jungle {
+  background-color: var(--color-proline-jungle);
+  color: var(--color-proline-light-gray);
+}
+
 .dot {
   height: 18px;
   width: 18px;
@@ -324,6 +336,13 @@ a:where(:not(.wp-element-button)) {
   border-radius: 0;
 }
 
+.proline-persimmon-button-woocommerce-button-secondary {
+  color: var(--color-proline-persimmon);
+  background-color: transparent;
+  border: 1px solid var(--color-proline-persimmon);
+  border-radius: 0;
+}
+
 .proline-persimmon-button-woocommerce-add-sample-button {
   background-color: var(--color-proline-persimmon) !important;
   padding: 0.5em 1em;
@@ -402,4 +421,12 @@ a:where(:not(.wp-element-button)) {
   margin-top: 0.5rem;
   width: auto;
   vertical-align: top;
+}
+
+.ajax_add_to_cart {
+  margin-bottom: 0 !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  border: 0;
 }

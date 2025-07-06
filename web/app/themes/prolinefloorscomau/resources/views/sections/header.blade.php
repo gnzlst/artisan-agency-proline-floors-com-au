@@ -124,7 +124,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Shop Stair Nosing',
-                        'url' => '#',
+                        'url' => '/stair-nosing/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -137,7 +137,7 @@ $menu = [
                 'items' => [
                     [
                         'text' => 'Shop Hybrid Flooring Accessories',
-                        'url' => '#',
+                        'url' => '/hybrid-flooring-accessories/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -145,7 +145,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Shop Vinyl Cutters',
-                        'url' => '#',
+                        'url' => '/vinyl-cutters/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -153,7 +153,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Shop Maintenance Accessories',
-                        'url' => '#',
+                        'url' => '/maintenance-accessories/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
