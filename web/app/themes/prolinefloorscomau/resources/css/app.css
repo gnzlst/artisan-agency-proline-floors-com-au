@@ -19,7 +19,9 @@
   --color-proline-soft-green: #b6bca7;
   --color-proline-cedar: #797168;
   --color-proline-linen: #f0e8d8;
-  --color-proline-burnt-sienna: #856C4F;
+  --color-proline-burnt-sienna: #856c4f;
+  --color-proline-dark-vanilla: #c3c2b3;
+  --color-proline-silk: #e4e5dd;
 }
 
 /* Font Faces */
@@ -177,6 +179,10 @@ a:where(:not(.wp-element-button)) {
   @apply py-20 px-10 sm:px-10;
 }
 
+.proline-sub-section-padding {
+  @apply py-10 px-10 sm:px-10;
+}
+
 .proline-header-with-right-image-padding {
   @apply pt-0 pr-10 pb-0 pl-10 sm:pl-10 sm:pr-0;
 }
@@ -207,6 +213,26 @@ a:where(:not(.wp-element-button)) {
 .proline-section-cedar {
   background-color: var(--color-proline-cedar);
   color: var(--color-proline-dark);
+}
+
+.proline-section-dark-vanilla {
+  background-color: var(--color-proline-dark-vanilla);
+  color: var(--color-proline-dark);
+}
+
+.proline-section-silk {
+  background-color: var(--color-proline-silk);
+  color: var(--color-proline-dark);
+}
+
+.dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  background-color: var(--color-proline-persimmon);
 }
 
 .proline-section-jumbo-text {
@@ -274,6 +300,10 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-persimmon);
 }
 
+.proline-soft-green-text {
+  color: var(--color-proline-soft-green);
+}
+
 .proline-dark-text {
   color: var(--color-proline-dark);
 }
@@ -321,7 +351,12 @@ a:where(:not(.wp-element-button)) {
   bottom: 0;
   z-index: 2;
   padding: 3px 0;
-  background: rgba(255,255,255,0.85); /* Optional: semi-transparent background */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.85
+  ); /* Optional: semi-transparent background */
   display: flex;
   justify-content: center;
 }
@@ -360,7 +395,8 @@ a:where(:not(.wp-element-button)) {
   display: block !important;
 }
 
-.woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image:not(:first-child) {
+.woocommerce-product-gallery__wrapper
+  .woocommerce-product-gallery__image:not(:first-child) {
   display: inline-block;
   margin-right: 0.5rem;
   margin-top: 0.5rem;

@@ -227,3 +227,13 @@ add_filter('woocommerce_single_product_image_thumbnail_html', function ($html, $
     );
     return $html;
 }, 10, 2);
+
+add_action('wp_enqueue_scripts', function () {
+    wp_add_inline_script('jquery', <<<JS
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('img[sizes^="auto,"]').forEach(img => {
+    img.setAttribute('sizes', img.getAttribute('sizes').replace(/^auto,\\s*/, ''));
+  });
+});
+JS);
+});

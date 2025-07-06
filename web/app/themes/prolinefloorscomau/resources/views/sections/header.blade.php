@@ -167,11 +167,11 @@ $menu = [
         'title' => 'Designer',
         'items' => [
             [
-                'title' => 'Shop by Designer',
+                'title' => 'Designers',
                 'items' => [
                     [
                         'text' => 'Qlay 2.0',
-                        'url' => '/shop-luxury-vinyl-plank-by-brand-qlay-2-0/',
+                        'url' => '/qlay-2-0/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -179,7 +179,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Qlay 5.0 | 3.0',
-                        'url' => '/shop-luxury-vinyl-plank-by-brand-qlay-5-0-qlay-3-0/',
+                        'url' => '/qlay-5-0-qlay-3-0/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -187,7 +187,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Genero Coastal',
-                        'url' => '/shop-luxury-vinyl-plank-by-brand-genero-coastal/',
+                        'url' => '/genero-coastal/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -195,7 +195,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Abode Coastal',
-                        'url' => '/shop-hybrid-flooring-by-brand-abode-coastal/',
+                        'url' => '/abode-coastal/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -203,7 +203,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Abode Prime',
-                        'url' => '/shop-hybrid-flooring-by-brand-abode-prime/',
+                        'url' => '/abode-prime/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -211,7 +211,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Rigid Plank',
-                        'url' => '/shop-hybrid-flooring-by-brand-rigid-plank/',
+                        'url' => '/rigid-plank/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',
@@ -219,7 +219,7 @@ $menu = [
                     ],
                     [
                         'text' => 'Rigid Plank XL',
-                        'url' => '/shop-hybrid-flooring-by-brand-rigid-plank-xl/',
+                        'url' => '/rigid-plank-xl/',
                         'description' => 'Shop free samples',
                         'description_url' => '#',
                         'extra' => 'Request free measure and quote from one of our stores.',

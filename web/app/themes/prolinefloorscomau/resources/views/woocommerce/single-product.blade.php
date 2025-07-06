@@ -113,7 +113,7 @@
                 $category_ids = collect($categories)->pluck('term_id')->toArray();
                 $args = [
                     'post_type' => 'product',
-                    'posts_per_page' => 8,
+                    'posts_per_page' => 1000,
                     'post__not_in' => [get_the_ID()],
                     'tax_query' => [
                         [
