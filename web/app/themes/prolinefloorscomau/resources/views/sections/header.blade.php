@@ -237,7 +237,7 @@ $menu = [
 ?>
 
 <header class="banner">
-    <nav class="bg-proline-dark border-b-1 border-proline-silk">
+    <nav class="bg-proline-dark border-b-1 border-proline-silk px-4">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between p-6">
             <a href="{{ home_url('/') }}"
                 class="w-full flex justify-center items-center mb-4 sm:w-auto sm:justify-start sm:mb-0 space-x-3 my-4 rtl:space-x-reverse">
@@ -264,11 +264,11 @@ $menu = [
         </nav>
     @endif
 
-    <nav class="bg-proline-dark">
+    <nav class="bg-proline-dark px-4">
         <div class="flex flex-wrap items-center justify-between mx-auto p-6">
             <div class="flex md:order-2 rtl:space-x-reverse ml-auto">
                 <button class="bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white uppercase cursor-pointer mx-4"
-                    onclick="location.href='{{ get_permalink(get_page_by_path('where-to-buy')) }}'">
+                    onclick="location.href='{{ get_permalink(get_page_by_path('where-to-buy')) }}'" style="margin-left: 0px;">
                     Where to Buy
                 </button>
                 <button

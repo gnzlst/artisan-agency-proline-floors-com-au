@@ -21,7 +21,7 @@ $footerMenu = [
 <footer class="bottom-0 left-0 z-20 w-full p-4 bg-proline-dark border-t-1 border-proline-silk">
     @php(dynamic_sidebar('sidebar-footer'))
     <div class="mx-auto w-full">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 px-2 py-6 lg:py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 px-6 py-6 lg:py-8">
             @foreach ($footerMenu as $section)
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-proline-gray uppercase">{{ $section['title'] }}</h2>
@@ -54,12 +54,12 @@ $footerMenu = [
             </div>
         </div>
 
-        <div class="px-4 py-6 bg-proline-dark">
+        <div class="px-6 py-6 bg-proline-dark">
             <img class="h-auto max-w-full" src="@asset('resources/images/layout/logo-proline-floors-footer-group.png')" class="h-4"
                 alt="{!! $siteName !!} Footer Logo" />
         </div>
 
-        <div class="grid grid-cols-2 gap-18 mt-18 mb-9 py-6 border-b-1 border-t-1 border-proline-gray">
+        <div class="grid grid-cols-2 gap-18 mt-18 mx-6 mb-9 py-6 border-b-1 border-t-1 border-proline-silk">
             <div class="flex flex-col justify-between">
                 <h2 class="mb-6 text-sm font-semibold text-proline-gray uppercase">
                     Proline Floors & Bostik Australia - A Strong Partnership
@@ -80,7 +80,7 @@ $footerMenu = [
             </div>
         </div>
 
-        <div class="px-4 py-6 bg-proline-dark">
+        <div class="px-6 py-6 bg-proline-dark">
             <div class="flex flex-col sm:flex-row sm:justify-between items-center space-y-4 sm:space-y-0">
                 <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">&copy; {{ date('Y') }}
                     Proline
