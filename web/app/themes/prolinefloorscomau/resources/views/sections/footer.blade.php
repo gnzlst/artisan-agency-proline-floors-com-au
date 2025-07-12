@@ -18,10 +18,10 @@ $footerMenu = [
     ],
 ];
 ?>
-<footer class=" bottom-0 left-0 z-20 w-full p-4 bg-proline-dark">
+<footer class="bottom-0 left-0 z-20 w-full p-4 bg-proline-dark border-t-1 border-proline-silk">
     @php(dynamic_sidebar('sidebar-footer'))
-    <div class="mx-auto w-full ">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 px-4 py-6 lg:py-8">
+    <div class="mx-auto w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 px-2 py-6 lg:py-8">
             @foreach ($footerMenu as $section)
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-proline-gray uppercase">{{ $section['title'] }}</h2>

@@ -237,13 +237,15 @@ $menu = [
 ?>
 
 <header class="banner">
-    <nav class="bg-proline-dark border-b-1 border-proline-gray">
-        <div class="flex flex-wrap justify-between items-center p-6">
-            <a href="{{ home_url('/') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="@asset('resources/images/layout/logo-proline-floors-header.png')" class="h-4" alt="{!! $siteName !!} Logo" />
+    <nav class="bg-proline-dark border-b-1 border-proline-silk">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between p-6">
+            <a href="{{ home_url('/') }}"
+                class="w-full flex justify-center items-center mb-4 sm:w-auto sm:justify-start sm:mb-0 space-x-3 my-4 rtl:space-x-reverse">
+                <img src="@asset('resources/images/layout/logo-proline-floors-header.png')" class="h-8 sm:h-4 max-w-xs w-full sm:w-auto"
+                    alt="{!! $siteName !!} Logo" />
             </a>
             <div
-                class="flex flex-col sm:flex-row sm:items-center sm:justify-end sm:space-x-4 space-y-4 sm:space-y-0 pt-4 sm:pt-0">
+                class="flex flex-row justify-center sm:flex-row sm:items-center sm:justify-end sm:space-x-4 space-x-4 pt-0 sm:pt-0 my-4 sm:mb-0">
                 <button
                     class="bg-proline-dark border-1 border-proline-gray text-proline-gray px-4 py-2 hover:bg-black uppercase cursor-pointer"
                     onclick="location.href='{{ get_permalink(get_page_by_path('cart')) }}'">
@@ -263,9 +265,9 @@ $menu = [
     @endif
 
     <nav class="bg-proline-dark">
-        <div class="flex flex-wrap items-center justify-between mx-auto p-4">
-            <div class="flex md:order-2 space-x-3 rtl:space-x-reverse ml-auto">
-                <button class="bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white uppercase cursor-pointer"
+        <div class="flex flex-wrap items-center justify-between mx-auto p-6">
+            <div class="flex md:order-2 rtl:space-x-reverse ml-auto">
+                <button class="bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white uppercase cursor-pointer mx-4"
                     onclick="location.href='{{ get_permalink(get_page_by_path('where-to-buy')) }}'">
                     Where to Buy
                 </button>
@@ -320,7 +322,7 @@ $menu = [
                 <div id="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
                     class="dropdown-menu-item mt-1 bg-proline-dark border-gray-200 shadow-xs border-y hidden">
                     <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-screen-2xl px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:px-6">
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:px-6">
                         @foreach ($section['items'] as $subsection)
                             <div>
                                 <h2 id="title-{{ strtolower(str_replace(' ', '-', $subsection['title'] ?? $section['title'])) }}-{{ $index + 1 }}"
