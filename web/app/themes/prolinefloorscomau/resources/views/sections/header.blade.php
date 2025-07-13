@@ -298,7 +298,7 @@ $menu = [
                                 <button id="mega-menu-full-cta-dropdown-{{ $index + 1 }}-button"
                                     data-dropdown-target="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
                                     data-dropdown-placement="bottom"
-                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
                                     {{ $section['title'] }}
                                     <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 10 6">
@@ -308,7 +308,7 @@ $menu = [
                                 </button>
                             @else
                                 <a href="{{ $section['url'] }}"
-                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
                                     {{ $section['title'] }}
                                 </a>
                             @endif
@@ -334,8 +334,7 @@ $menu = [
                                     class="proline-megamenu-list space-y-4 sm:mb-4 md:mb-0 md:columns-2">
                                     @foreach ($subsection['items'] ?? [] as $item)
                                         <li class="mb-6">
-                                            <a href="{{ $item['url'] }}"
-                                                class="hover:underline hover:text-blue-600 dark:hover:text-blue-500">
+                                            <a href="{{ $item['url'] }}" class="hover:underline">
                                                 {{ ucwords($item['text']) }}
                                             </a>
                                             @if (isset($item['description']))
