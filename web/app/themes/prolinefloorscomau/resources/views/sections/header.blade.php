@@ -368,7 +368,7 @@ $menu = [
                         @endforeach
                     </div>
                     <div
-                        class="bg-proline-gray w-full px-6 py-4 border-t border-proline-dark flex flex-col sm:flex-row sm:justify-between items-center gap-4">
+                        class="px-10 bg-proline-gray w-full px-6 py-4 border-t border-proline-dark flex flex-col sm:flex-row sm:justify-between items-center gap-4">
                         <div class="flex items-center gap-4">
                             <span class="text-proline-dark">Shopping Basket</span>
                             <a href="{{ get_permalink(get_page_by_path('cart')) }}"
