@@ -264,8 +264,8 @@ $menu = [
         </nav>
     @endif
 
-    <nav class="bg-proline-dark px-4 border-b-1 border-proline-silk">
-        <div class="flex flex-wrap items-center justify-between mx-auto px-6 py-4">
+    <nav class="bg-proline-dark border-b-1 border-proline-silk">
+        <div class="flex flex-wrap items-center justify-between mx-auto px-10 py-4">
             <div class="flex md:order-2 rtl:space-x-reverse ml-auto">
                 <button class="bg-proline-gray text-proline-dark px-3 py-2 hover:bg-white uppercase cursor-pointer mr-4"
                     onclick="location.href='{{ get_permalink(get_page_by_path('where-to-buy')) }}'"
@@ -323,7 +323,7 @@ $menu = [
                 <div id="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
                     class="dropdown-menu-item mt-1 bg-proline-dark border-gray-200 shadow-xs hidden">
                     <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:px-6">
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-10 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400">
                         @foreach ($section['items'] as $subsection)
                             <div>
                                 <h2 id="title-{{ strtolower(str_replace(' ', '-', $subsection['title'] ?? $section['title'])) }}-{{ $index + 1 }}"
@@ -367,6 +367,26 @@ $menu = [
                                 </ul>
                             </div>
                         @endforeach
+                    </div>
+                    <div
+                        class="bg-proline-gray w-full px-6 py-4 border-t border-proline-dark flex flex-col sm:flex-row sm:justify-between items-center gap-4">
+                        <div class="flex items-center gap-4">
+                            <span class="text-proline-dark">Shopping Basket</span>
+                            <a href="{{ get_permalink(get_page_by_path('cart')) }}"
+                                class="text-dark border-b-1 border-proline-dark">See Cart</a>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                            <a href="/shop-all-luxury-vinyl-plank/" class="text-dark flex items-center gap-2">
+                                <span class="inline-block w-4 h-4"
+                                    style="transform: rotate(90deg); background-image: url('@asset('resources/images/layout/bullet-iso-green.png')'); background-size: contain; background-repeat: no-repeat;"></span>
+                                Shop All Samples
+                            </a>
+                            <a href="#" class="text-dark flex items-center gap-2">
+                                <span class="inline-block w-4 h-4"
+                                    style="transform: rotate(90deg); background-image: url('@asset('resources/images/layout/bullet-iso-green.png')'); background-size: contain; background-repeat: no-repeat;"></span>
+                                Order Free Samples
+                            </a>
+                        </div>
                     </div>
                 </div>
             @endif
