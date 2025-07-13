@@ -24,6 +24,10 @@
   --color-proline-silk: #e4e5dd;
   --color-proline-artichoke: #a09b8b;
   --color-proline-jungle: #373a02;
+  --color-proline-charcoal: #262525;
+  --color-proline-fog: #bebebe;
+  --color-proline-granite: #4f4a48;
+  --color-proline-sable-black: #1e1c1d;
 }
 
 /* Font Faces */
@@ -209,7 +213,7 @@ a:where(:not(.wp-element-button)) {
 
 .proline-section-burnt-sienna {
   background-color: var(--color-proline-burnt-sienna);
-  color: var(--color-proline-light-gray);
+  color: var(--color-proline-silk);
 }
 
 .proline-section-cedar {
@@ -230,6 +234,36 @@ a:where(:not(.wp-element-button)) {
 .proline-section-artichoke {
   background-color: var(--color-proline-artichoke);
   color: var(--color-proline-light-gray);
+}
+
+.proline-section-soft-green {
+  background-color: var(--color-proline-soft-green);
+  color: var(--color-proline-dark);
+}
+
+.proline-section-charcoal {
+  background-color: var(--color-proline-charcoal);
+  color: var(--color-proline-silk);
+}
+
+.proline-section-natural-sienna {
+  background-color: var(--color-proline-natural-sienna);
+  color: var(--color-proline-silk);
+}
+
+.proline-section-fog {
+  background-color: var(--color-proline-fog);
+  color: var(--color-proline-dark);
+}
+
+.proline-section-granite {
+  background-color: var(--color-proline-granite);
+  color: var(--color-proline-silk);
+}
+
+.proline-section-sable-black {
+  background-color: var(--color-proline-sable-black);
+  color: var(--color-proline-soft-green);
 }
 
 .proline-section-jungle {
@@ -301,6 +335,27 @@ a:where(:not(.wp-element-button)) {
   border-bottom: 1px solid var(--color-proline-phthalo-green);
 }
 
+.proline-section-soft-green-button a {
+  color: var(--color-proline-dark);
+  margin: 1rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-proline-dark);
+}
+
+.proline-section-jungle-button a {
+  color: var(--color-proline-jungle);
+  margin: 1rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-proline-jungle);
+}
+
+.proline-section-natural-sienna-button a {
+  color: var(--color-proline-natural-sienna);
+  margin: 1rem 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-proline-natural-sienna);
+}
+
 .proline-section-contact-button {
   color: var(--color-proline-dark);
   margin: 1rem 0;
@@ -318,6 +373,14 @@ a:where(:not(.wp-element-button)) {
 
 .proline-dark-text {
   color: var(--color-proline-dark);
+}
+
+.proline-jungle-text {
+  color: var(--color-proline-jungle);
+}
+
+.proline-natural-sienna-text {
+  color: var(--color-proline-natural-sienna);
 }
 
 .proline-section-border-bottom-light-gray {
@@ -434,4 +497,19 @@ a:where(:not(.wp-element-button)) {
 .wp-block-button.wc-block-components-product-button.is-style-outline
   .wp-block-button__link {
   border: 0 !important;
+}
+
+.how-we-work-step-fix,
+#block-404c8d15-72db-426f-be0a-70afc4a6425a {
+  display: none !important;
+}
+
+.proline-header-logo {
+  max-width: 180px !important;
+  height: auto !important;
+}
+
+.is-large.wc-block-cart,
+.is-small.wc-block-components-sidebar-layout {
+  margin-bottom: 0 !important;
 }

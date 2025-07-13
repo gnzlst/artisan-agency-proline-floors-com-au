@@ -2,19 +2,111 @@
 $footerMenu = [
     [
         'title' => 'Quick Links',
-        'items' => [['text' => 'Shop All', 'url' => '#'], ['text' => 'Order Free Samples', 'url' => '#'], ['text' => 'Stair Nosing and Accessories', 'url' => '/stair-nosing/'], ['text' => 'Gallery', 'url' => '/galleries/'], ['text' => 'Where to Buy', 'url' => '/where-to-buy'], ['text' => 'Contact Us', 'url' => '/contact-us']],
+        'items' => [
+            [
+                'text' => 'Shop All',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Order Free Samples',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Stair Nosing and Accessories',
+                'url' => '/stair-nosing/',
+            ],
+            [
+                'text' => 'Gallery',
+                'url' => '/galleries/',
+            ],
+            [
+                'text' => 'Where to Buy',
+                'url' => '/where-to-buy/',
+            ],
+            [
+                'text' => 'Contact Us',
+                'url' => '/contact-us/',
+            ],
+        ],
     ],
     [
         'title' => 'Resources',
-        'items' => [['text' => 'Support', 'url' => '#'], ['text' => 'Care Tips', 'url' => '#'], ['text' => 'Installation', 'url' => '#'], ['text' => 'Flooring Specs', 'url' => '#'], ['text' => 'Brochures', 'url' => '#'], ['text' => 'Blog', 'url' => '#']],
+        'items' => [
+            [
+                'text' => 'Support',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Care Tips',
+                'url' => '/cleaning/',
+            ],
+            [
+                'text' => 'Installation',
+                'url' => '/installation-guides/',
+            ],
+            [
+                'text' => 'Flooring Specs',
+                'url' => '/flooring-specifications/',
+            ],
+            [
+                'text' => 'Brochures',
+                'url' => '/downloads/',
+            ],
+            [
+                'text' => 'Blog',
+                'url' => '/blog/',
+            ],
+        ],
     ],
     [
         'title' => 'Contact Us',
-        'items' => [['text' => 'Follow Us', 'url' => '#'], ['text' => 'Social Media', 'url' => '#'], ['text' => 'Newsletter', 'url' => '#'], ['text' => 'Special Offers', 'url' => '#'], ['text' => 'Request Free Samples', 'url' => '#'], ['text' => 'Request Measure and Quote', 'url' => '#']],
+        'items' => [
+            [
+                'text' => 'Follow Us',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Social Media',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Newsletter',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Special Offers',
+                'url' => '#',
+            ],
+            [
+                'text' => 'Request Free Samples',
+                'url' => '/contact-us/',
+            ],
+            [
+                'text' => 'Request Measure and Quote',
+                'url' => '/contact-us/',
+            ],
+        ],
     ],
     [
         'title' => 'About Us',
-        'items' => [['text' => 'Why Proline Floors', 'url' => '#'], ['text' => 'Our Process', 'url' => '#'], ['text' => 'Our Team', 'url' => '#'], ['text' => 'Mission Statement', 'url' => '#']],
+        'items' => [
+            [
+                'text' => 'Why Proline Floors',
+                'url' => '/why-proline-floors/',
+            ],
+            [
+                'text' => 'Our Process',
+                'url' => '/how-we-work/',
+            ],
+            [
+                'text' => 'Our Team',
+                'url' => '/meet-the-team/',
+            ],
+            [
+                'text' => 'Mission Statement',
+                'url' => '#',
+            ],
+        ],
     ],
 ];
 ?>
