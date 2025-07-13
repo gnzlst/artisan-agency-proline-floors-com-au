@@ -264,7 +264,7 @@ $menu = [
         </nav>
     @endif
 
-    <nav class="bg-proline-dark px-4">
+    <nav class="bg-proline-dark px-4 border-b-1 border-proline-silk">
         <div class="flex flex-wrap items-center justify-between mx-auto px-6 py-4">
             <div class="flex md:order-2 rtl:space-x-reverse ml-auto">
                 <button class="bg-proline-gray text-proline-dark px-3 py-2 hover:bg-white uppercase cursor-pointer mr-4"
@@ -321,7 +321,7 @@ $menu = [
         @foreach ($menu as $index => $section)
             @if (isset($section['items']) && is_array($section['items']))
                 <div id="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
-                    class="dropdown-menu-item mt-1 bg-proline-dark border-gray-200 shadow-xs border-y hidden">
+                    class="dropdown-menu-item mt-1 bg-proline-dark border-gray-200 shadow-xs hidden">
                     <div
                         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400 md:px-6">
                         @foreach ($section['items'] as $subsection)
