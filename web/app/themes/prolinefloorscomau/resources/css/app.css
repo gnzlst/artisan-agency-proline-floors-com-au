@@ -508,6 +508,11 @@ a:where(:not(.wp-element-button)) {
   max-width: 180px !important;
   height: auto !important;
 }
+@media (max-width: 640px) {
+  .proline-header-logo {
+    max-width: 300px !important;
+  }
+}
 
 .is-large.wc-block-cart,
 .is-small.wc-block-components-sidebar-layout {
