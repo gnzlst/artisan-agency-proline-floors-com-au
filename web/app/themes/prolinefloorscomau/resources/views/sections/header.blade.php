@@ -10,7 +10,7 @@ $menu = [
                         'text' => 'Shop All Luxury Vinyl Plank',
                         'url' => '/shop-all-luxury-vinyl-plank/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-all-luxury-vinyl-plank/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -18,7 +18,7 @@ $menu = [
                         'text' => 'About Luxury Vinyl Plank',
                         'url' => '/about-luxury-vinyl/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/about-luxury-vinyl/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -31,7 +31,7 @@ $menu = [
                         'text' => 'Shop All Hybrid Flooring',
                         'url' => '/shop-all-hybrid-flooring/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-all-hybrid-flooring/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -39,7 +39,7 @@ $menu = [
                         'text' => 'About Hybrid Flooring',
                         'url' => '/about-hybrid-flooring/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/about-hybrid-flooring/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -52,7 +52,7 @@ $menu = [
                         'text' => 'Qlay 2.0',
                         'url' => '/shop-luxury-vinyl-plank-by-brand-qlay-2-0/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-luxury-vinyl-plank-by-brand-qlay-2-0/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -60,7 +60,7 @@ $menu = [
                         'text' => 'Qlay 5.0 | 3.0',
                         'url' => '/shop-luxury-vinyl-plank-by-brand-qlay-5-0-qlay-3-0/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-luxury-vinyl-plank-by-brand-qlay-5-0-qlay-3-0/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -68,7 +68,7 @@ $menu = [
                         'text' => 'Genero Coastal',
                         'url' => '/shop-luxury-vinyl-plank-by-brand-genero-coastal/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-luxury-vinyl-plank-by-brand-genero-coastal/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -76,7 +76,7 @@ $menu = [
                         'text' => 'Abode Coastal',
                         'url' => '/shop-hybrid-flooring-by-brand-abode-coastal/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-hybrid-flooring-by-brand-abode-coastal/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -84,7 +84,7 @@ $menu = [
                         'text' => 'Abode Prime',
                         'url' => '/shop-hybrid-flooring-by-brand-abode-prime/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-hybrid-flooring-by-brand-abode-prime/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -92,7 +92,7 @@ $menu = [
                         'text' => 'Rigid Plank',
                         'url' => '/shop-hybrid-flooring-by-brand-rigid-plank/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-hybrid-flooring-by-brand-rigid-plank/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -100,7 +100,7 @@ $menu = [
                         'text' => 'Rigid Plank XL',
                         'url' => '/shop-hybrid-flooring-by-brand-rigid-plank-xl/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/shop-hybrid-flooring-by-brand-rigid-plank-xl/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -118,7 +118,7 @@ $menu = [
                         'text' => 'Shop Custom Made Stair Nosing',
                         'url' => '/custom-made-stair-nosing/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/custom-made-stair-nosing/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -126,7 +126,7 @@ $menu = [
                         'text' => 'Shop Stair Nosing',
                         'url' => '/stair-nosing/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/stair-nosing/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -139,7 +139,7 @@ $menu = [
                         'text' => 'Shop Hybrid Flooring Accessories',
                         'url' => '/hybrid-flooring-accessories/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/hybrid-flooring-accessories/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -147,7 +147,7 @@ $menu = [
                         'text' => 'Shop Vinyl Cutters',
                         'url' => '/vinyl-cutters/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/vinyl-cutters/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -155,7 +155,7 @@ $menu = [
                         'text' => 'Shop Maintenance Accessories',
                         'url' => '/maintenance-accessories/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/maintenance-accessories/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -173,7 +173,7 @@ $menu = [
                         'text' => 'Qlay 2.0',
                         'url' => '/qlay-2-0/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/qlay-2-0/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -181,7 +181,7 @@ $menu = [
                         'text' => 'Qlay 5.0 | 3.0',
                         'url' => '/qlay-5-0-qlay-3-0/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/qlay-5-0-qlay-3-0/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -189,7 +189,7 @@ $menu = [
                         'text' => 'Genero Coastal',
                         'url' => '/genero-coastal/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/genero-coastal/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -197,7 +197,7 @@ $menu = [
                         'text' => 'Abode Coastal',
                         'url' => '/abode-coastal/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/abode-coastal/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -205,7 +205,7 @@ $menu = [
                         'text' => 'Abode Prime',
                         'url' => '/abode-prime/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/abode-prime/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -213,7 +213,7 @@ $menu = [
                         'text' => 'Rigid Plank',
                         'url' => '/rigid-plank/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/rigid-plank/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -221,7 +221,7 @@ $menu = [
                         'text' => 'Rigid Plank XL',
                         'url' => '/rigid-plank-xl/',
                         'description' => 'Shop free samples',
-                        'description_url' => '#',
+                        'description_url' => '/rigid-plank-xl/#shop',
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
@@ -247,13 +247,13 @@ $menu = [
             <div
                 class="flex flex-row justify-center sm:flex-row sm:items-center sm:justify-end sm:space-x-4 space-x-4 pt-0 sm:pt-0 my-4 sm:mb-0">
                 <button
-                    class="bg-proline-dark border-1 border-proline-gray text-proline-gray px-3 py-2 hover:bg-black uppercase cursor-pointer"
+                    class="bg-proline-dark border-1 border-proline-gray proline-silk-text px-3 py-2 hover:bg-black uppercase cursor-pointer"
                     onclick="location.href='{{ get_permalink(get_page_by_path('cart')) }}'">
                     See Cart
                 </button>
-                <button class="bg-proline-gray text-proline-dark px-3 py-2 hover:bg-white uppercase cursor-pointer">
+                {{-- <button class="bg-proline-gray text-proline-dark px-3 py-2 hover:bg-white uppercase cursor-pointer">
                     Order Free Samples
-                </button>
+                </button> --}}
             </div>
         </div>
     </nav>
@@ -273,12 +273,12 @@ $menu = [
                     Where to Buy
                 </button>
                 <button
-                    class="bg-proline-dark border-1 border-proline-gray text-proline-gray px-3 py-2 hover:bg-black uppercase cursor-pointer"
+                    class="bg-proline-dark border-1 border-proline-gray proline-silk-text px-3 py-2 hover:bg-black uppercase cursor-pointer"
                     onclick="location.href='{{ get_permalink(get_page_by_path('contact-us')) }}'">
                     Contact Us
                 </button>
                 <button data-collapse-toggle="mega-menu-full-cta" type="button"
-                    class="ml-2 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="ml-2 inline-flex items-center p-2 w-10 h-10 justify-center text-sm proline-silk-text rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="mega-menu-full-cta" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -298,7 +298,7 @@ $menu = [
                                 <button id="mega-menu-full-cta-dropdown-{{ $index + 1 }}-button"
                                     data-dropdown-target="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
                                     data-dropdown-placement="bottom"
-                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium proline-silk-text border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
                                     {{ $section['title'] }}
                                     <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 10 6">
@@ -308,7 +308,7 @@ $menu = [
                                 </button>
                             @else
                                 <a href="{{ $section['url'] }}"
-                                    class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
+                                    class="flex items-center justify-between w-full py-2 px-3 font-medium proline-silk-text border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-700 uppercase cursor-pointer text-left">
                                     {{ $section['title'] }}
                                 </a>
                             @endif
@@ -323,11 +323,11 @@ $menu = [
                 <div id="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
                     class="dropdown-menu-item mt-1 bg-proline-dark border-gray-200 shadow-xs hidden">
                     <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-10 py-5 mx-auto text-sm text-gray-500 dark:text-gray-400">
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-10 py-5 mx-auto text-sm proline-silk-text">
                         @foreach ($section['items'] as $subsection)
                             <div>
                                 <h2 id="title-{{ strtolower(str_replace(' ', '-', $subsection['title'] ?? $section['title'])) }}-{{ $index + 1 }}"
-                                    class="mb-8 font-semibold text-gray-900 dark:text-white uppercase">
+                                    class="mb-8 font-semibold proline-silk-text uppercase">
                                     {{ $subsection['title'] ?? $section['title'] }}
                                 </h2>
                                 <ul id="menu-{{ strtolower(str_replace(' ', '-', $subsection['title'] ?? $section['title'])) }}-{{ $index + 1 }}"

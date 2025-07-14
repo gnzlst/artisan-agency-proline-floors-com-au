@@ -383,6 +383,10 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-natural-sienna);
 }
 
+.proline-silk-text {
+  color: var(--color-proline-silk);
+}
+
 .proline-section-border-bottom-light-gray {
   border-bottom: 1px solid var(--color-proline-light-gray);
 }
