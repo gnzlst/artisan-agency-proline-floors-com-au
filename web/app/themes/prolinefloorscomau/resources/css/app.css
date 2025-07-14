@@ -522,7 +522,7 @@ a:where(:not(.wp-element-button)) {
 .is-small.wc-block-components-sidebar-layout {
   margin-bottom: 0 !important;
 }
-
+.padding-left-0 a,
 .padding-left-0 {
   padding-left: 0 !important;
 }
