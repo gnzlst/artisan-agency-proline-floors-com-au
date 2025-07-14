@@ -332,7 +332,7 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-dark);
   margin: 1rem 0;
   border-radius: 0;
-  border-bottom: 1px solid var(--color-proline-phthalo-green);
+  border-bottom: 1px solid var(--color-proline-dark);
 }
 
 .proline-section-soft-green-button a {
@@ -521,4 +521,8 @@ a:where(:not(.wp-element-button)) {
 .is-large.wc-block-cart,
 .is-small.wc-block-components-sidebar-layout {
   margin-bottom: 0 !important;
+}
+
+.padding-left-0 {
+  padding-left: 0 !important;
 }
