@@ -72,6 +72,11 @@ $menu = [
                         'extra' => 'Request free measure and quote from one of our stores.',
                         'extra_url' => '/contact-us/',
                     ],
+                ],
+            ],
+            [
+                'title' => 'Shop by Designer',
+                'items' => [
                     [
                         'text' => 'Abode Coastal',
                         'url' => '/shop-hybrid-flooring-by-brand-abode-coastal/',
@@ -323,7 +328,7 @@ $menu = [
                 <div id="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
                     class="dropdown-menu-item mt-1 bg-proline-dark border-gray-200 shadow-xs hidden">
                     <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-10 py-5 mx-auto text-sm proline-silk-text">
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 px-10 py-5 mx-auto text-sm proline-silk-text">
                         @foreach ($section['items'] as $subsection)
                             <div>
                                 <h2 id="title-{{ strtolower(str_replace(' ', '-', $subsection['title'] ?? $section['title'])) }}-{{ $index + 1 }}"
@@ -380,7 +385,7 @@ $menu = [
                                     style="transform: rotate(90deg); background-image: url('@asset('resources/images/layout/bullet-iso-green.png')'); background-size: contain; background-repeat: no-repeat;"></span>
                                 Shop All Samples
                             </a>
-                            <a href="#" class="text-dark flex items-center gap-2">
+                            <a href="/shop-all-hybrid-flooring/" class="text-dark flex items-center gap-2">
                                 <span class="inline-block w-4 h-4"
                                     style="transform: rotate(90deg); background-image: url('@asset('resources/images/layout/bullet-iso-green.png')'); background-size: contain; background-repeat: no-repeat;"></span>
                                 Order Free Samples

@@ -110,7 +110,7 @@ a:where(:not(.wp-element-button)) {
   padding: 0.2em 1em;
   text-align: center;
   border-color: var(--color-proline-persimmon) !important;
-  color: var(--color-proline-gray);
+  color: var(--color-proline-silk);
   background-color: var(--color-proline-persimmon);
 }
 
@@ -208,7 +208,7 @@ a:where(:not(.wp-element-button)) {
 
 .proline-section-dark {
   background-color: var(--color-proline-dark);
-  color: var(--color-proline-gray);
+  color: var(--color-proline-silk);
 }
 
 .proline-section-burnt-sienna {
@@ -233,7 +233,7 @@ a:where(:not(.wp-element-button)) {
 
 .proline-section-artichoke {
   background-color: var(--color-proline-artichoke);
-  color: var(--color-proline-light-gray);
+  color: var(--color-proline-silk);
 }
 
 .proline-section-soft-green {
@@ -268,7 +268,7 @@ a:where(:not(.wp-element-button)) {
 
 .proline-section-jungle {
   background-color: var(--color-proline-jungle);
-  color: var(--color-proline-light-gray);
+  color: var(--color-proline-silk);
 }
 
 .dot {
@@ -281,8 +281,17 @@ a:where(:not(.wp-element-button)) {
   background-color: var(--color-proline-persimmon);
 }
 
+.wp-block-column p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin-right: auto;
+  font-family: Maxeville, sans-serif;
+}
+
 .proline-section-jumbo-text {
-  font-size: 4.5rem;
+  font-size: 7.2rem !important;
+  max-width: 100% !important;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -311,7 +320,7 @@ a:where(:not(.wp-element-button)) {
 
 .proline-section-dark-button a {
   margin: 1rem 0;
-  border-bottom: 1px solid var(--color-proline-gray);
+  border-bottom: 1px solid var(--color-proline-silk);
   border-radius: 0;
 }
 
@@ -454,7 +463,7 @@ a:where(:not(.wp-element-button)) {
 }
 
 .proline-product-categories {
-  color: --var(--color-proline-dark);
+  color: var(--color-proline-dark) !important;
   font-size: 0.9em;
 }
 
@@ -525,4 +534,8 @@ a:where(:not(.wp-element-button)) {
 .padding-left-0 a,
 .padding-left-0 {
   padding-left: 0 !important;
+}
+
+.wp-block-post-title a {
+  color: var(--color-proline-dark) !important;
 }
