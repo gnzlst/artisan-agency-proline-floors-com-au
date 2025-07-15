@@ -9,6 +9,19 @@
         $cleaning = get_post_meta(get_the_ID(), 'cleaning', true);
         $installation = get_post_meta(get_the_ID(), 'installation', true);
         $categories = get_the_terms(get_the_ID(), 'product_cat');
+        $has_hybrid =
+            $categories &&
+            !is_wp_error($categories) &&
+            collect($categories)->pluck('name')->contains('Hybrid flooring');
+        $main_btn_class = $has_hybrid
+            ? 'proline-jungle-button-woocommerce-button'
+            : 'proline-persimmon-button-woocommerce-button';
+        $brochure_btn_class = $has_hybrid
+            ? 'proline-jungle-button-woocommerce-button'
+            : 'proline-persimmon-button-woocommerce-brochure-button';
+        $add_sample_btn_class = $has_hybrid
+            ? 'proline-jungle-button-woocommerce-add-sample-button'
+            : 'proline-persimmon-button-woocommerce-add-sample-button';
     @endphp
     <div class="container mx-auto py-8">
         <div class="flex flex-col md:flex-row gap-8">
@@ -91,16 +104,17 @@
                     @endif
                 </div>
                 <div class="mt-8">
+
                     <form class="flex flex-col items-start w-full" method="post" action="{{ esc_url(wc_get_cart_url()) }}">
                         <input type="hidden" name="add-to-cart" value="{{ get_the_ID() }}">
                         <button type="submit"
-                            class="proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white w-full">
+                            class="{{ $main_btn_class }} bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white w-full">
                             Add Free Samples To Cart
                         </button>
                     </form>
                     @if ($brochure)
                         <a href="{{ esc_url($brochure) }}" target="_blank" rel="noopener noreferrer"
-                            class="proline-persimmon-button-woocommerce-brochure-button proline-light-gray-text px-4 py-2 tracking-wide w-full mt-4 text-center block">
+                            class="{{ $brochure_btn_class }} proline-light-gray-text px-4 py-2 tracking-wide w-full mt-4 text-center block">
                             Download Brochure
                         </a>
                     @endif
@@ -154,8 +168,7 @@
                                 <form method="post" action="{{ esc_url(wc_get_cart_url()) }}"
                                     class="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 w-full">
                                     <input type="hidden" name="add-to-cart" value="{{ $related->ID }}">
-                                    <button type="submit"
-                                        class="proline-persimmon-button-woocommerce-add-sample-button proline-light-gray-text">Add
+                                    <button type="submit" class="{{ $add_sample_btn_class }} proline-silk-text">Add
                                         Sample to Cart</button>
                                 </form>
                             </div>

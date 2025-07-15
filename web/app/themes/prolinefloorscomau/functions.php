@@ -139,13 +139,19 @@ add_filter('woocommerce_loop_add_to_cart_link', function ($html, $product) {
             return $html;
         }
     }
-    $custom_classes = 'proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
+    if (has_term('Hybrid flooring', 'product_cat', $product->get_id())) {
+        $custom_classes = 'proline-jungle-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
+        $order_class = 'proline-jungle-text';
+    } else {
+        $custom_classes = 'proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
+        $order_class = 'proline-persimmon-text';
+    }
     $html = preg_replace(
         '/(class="[^"]*)"/',
         '$1 ' . $custom_classes . '"',
         $html
     );
-    $custom_text = '<div class="mb-4 text-sm font-semibold"><a href="/contact-us/" class="proline-persimmon-text">Order a free measure and quote</a></div>';
+    $custom_text = '<div class="mb-4 text-sm font-semibold"><a href="/contact-us/" class="' . $order_class . '">Order a free measure and quote</a></div>';
     return $custom_text . $html;
 }, 10, 2);
 

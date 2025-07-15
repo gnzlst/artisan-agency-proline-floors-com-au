@@ -414,6 +414,14 @@ a:where(:not(.wp-element-button)) {
   border-radius: 0;
 }
 
+.proline-jungle-button-woocommerce-button {
+  color: var(--color-proline-jungle);
+  background-color: transparent;
+  border: 1px solid var(--color-proline-jungle);
+  padding: 0.5em 1em;
+  border-radius: 0;
+}
+
 .proline-persimmon-button-woocommerce-button-secondary {
   color: var(--color-proline-persimmon);
   background-color: transparent;
@@ -423,6 +431,16 @@ a:where(:not(.wp-element-button)) {
 
 .proline-persimmon-button-woocommerce-add-sample-button {
   background-color: var(--color-proline-persimmon) !important;
+  padding: 0.5em 1em;
+}
+
+.proline-jungle-button-woocommerce-add-sample-button {
+  background-color: var(--color-jungle-persimmon) !important;
+  padding: 0.5em 1em;
+}
+
+.proline-jungle-button-woocommerce-add-sample-button {
+  background-color: var(--color-proline-jungle) !important;
   padding: 0.5em 1em;
 }
 
@@ -441,6 +459,7 @@ a:where(:not(.wp-element-button)) {
   display: block;
 }
 
+.proline-jungle-button-woocommerce-add-sample-button,
 .proline-persimmon-button-woocommerce-add-sample-button {
   position: absolute;
   left: 0;

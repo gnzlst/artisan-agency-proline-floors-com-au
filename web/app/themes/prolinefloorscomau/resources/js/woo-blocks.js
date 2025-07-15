@@ -113,8 +113,18 @@ document.addEventListener('DOMContentLoaded', function () {
           });
       });
       var wrapper = document.createElement('div');
+      // Determine button class based on category
+      var hasHybridFlooring =
+        item.categories &&
+        item.categories.some(function (cat) {
+          return cat.name === 'Hybrid flooring';
+        });
+      var sampleButtonClass = hasHybridFlooring
+        ? 'proline-jungle-button-woocommerce-add-sample-button'
+        : 'proline-persimmon-button-woocommerce-add-sample-button';
       wrapper.className =
-        'wp-block-button wc-block-components-product-button align-center proline-persimmon-button-woocommerce-add-sample-button';
+        'wp-block-button wc-block-components-product-button align-center ' +
+        sampleButtonClass;
       wrapper.appendChild(button);
       item.imageLink.appendChild(wrapper);
 
@@ -136,6 +146,29 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .join(' | ');
           title.parentNode.insertBefore(catDiv, title);
+        }
+      }
+      // Update block button to "Learn More" and link to single product if not purchasable
+      var blockButton = item.product.querySelector(
+        '.wc-block-components-product-button__button'
+      );
+      if (blockButton) {
+        // Check if product is not purchasable (no price or custom logic)
+        var price = item.product.querySelector(
+          '.wc-block-components-product-price'
+        );
+        var isPurchasable = price && price.textContent.trim() !== '';
+        if (!isPurchasable) {
+          var span = blockButton.querySelector('span');
+          if (span) span.textContent = 'Learn More';
+          blockButton.onclick = function (e) {
+            e.preventDefault();
+            window.location.href = item.imageLink.href;
+          };
+          blockButton.removeAttribute('data-product_id');
+          blockButton.removeAttribute('data-product_sku');
+          blockButton.removeAttribute('aria-label');
+          blockButton.removeAttribute('rel');
         }
       }
     });
