@@ -22,6 +22,7 @@
         $add_sample_btn_class = $has_hybrid
             ? 'proline-jungle-button-woocommerce-add-sample-button'
             : 'proline-persimmon-button-woocommerce-add-sample-button';
+        $order_sample_btn_class = $has_hybrid ? 'proline-jungle-text' : 'proline-persimmon-text';
     @endphp
     <div class="container mx-auto py-8">
         <div class="flex flex-col md:flex-row gap-8">
@@ -185,7 +186,7 @@
                                     </div>
                                 @endif
                                 <h2 class="text-xl font-semibold mb-2">{{ get_the_title($related->ID) }}</h2>
-                                <span class="proline-persimmon-text block w-full text-left cursor-pointer"
+                                <span class="{{ $order_sample_btn_class }} block w-full text-left cursor-pointer"
                                     onclick="window.location.href='/contact-us/'">Order a free measure and quote</span>
                                 <button onclick="window.location.href='{{ get_permalink($related->ID) }}'"
                                     class="proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark py-2 hover:bg-white w-full mt-2">
