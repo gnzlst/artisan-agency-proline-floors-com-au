@@ -289,7 +289,7 @@ a:where(:not(.wp-element-button)) {
 }
 
 .proline-section-jumbo-text {
-  font-size: 7.2rem !important;
+  font-size: 5.1rem !important;
   max-width: 100% !important;
   line-height: 1.2;
   margin-bottom: 1rem;
