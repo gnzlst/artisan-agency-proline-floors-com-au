@@ -63,6 +63,7 @@ h4,
 h5,
 h6 {
   font-family: 'Maxeville', sans-serif;
+  font-weight: bold !important;
 }
 
 .h-4 {
@@ -284,9 +285,7 @@ a:where(:not(.wp-element-button)) {
 .wp-block-column p {
   font-size: 1.25rem;
   line-height: 1.5;
-  max-width: 600px;
   margin-right: auto;
-  font-family: Maxeville, sans-serif;
 }
 
 .proline-section-jumbo-text {
@@ -294,13 +293,16 @@ a:where(:not(.wp-element-button)) {
   max-width: 100% !important;
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-family: 'Maxeville', sans-serif !important;
+  font-weight: bold !important;
 }
 
 .proline-section-large-text {
   font-size: 2rem;
   line-height: 1.2;
-  font-weight: 600;
   margin-bottom: 1rem;
+  font-family: 'Maxeville', sans-serif !important;
+  font-weight: bold !important;
 }
 
 .proline-section-phthalo-green {
