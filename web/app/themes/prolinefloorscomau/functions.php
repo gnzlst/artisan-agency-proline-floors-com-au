@@ -140,10 +140,10 @@ add_filter('woocommerce_loop_add_to_cart_link', function ($html, $product) {
         }
     }
     if (has_term('Hybrid flooring', 'product_cat', $product->get_id())) {
-        $custom_classes = 'proline-jungle-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
+        $custom_classes = 'proline-jungle-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2';
         $order_class = 'proline-jungle-text';
     } else {
-        $custom_classes = 'proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white';
+        $custom_classes = 'proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark px-4 py-2';
         $order_class = 'proline-persimmon-text';
     }
     $html = preg_replace(

@@ -109,7 +109,7 @@
                     <form class="flex flex-col items-start w-full" method="post" action="{{ esc_url(wc_get_cart_url()) }}">
                         <input type="hidden" name="add-to-cart" value="{{ get_the_ID() }}">
                         <button type="submit"
-                            class="{{ $main_btn_class }} bg-proline-gray text-proline-dark px-4 py-2 hover:bg-white w-full">
+                            class="{{ $main_btn_class }} bg-proline-gray text-proline-dark px-4 py-2 w-full">
                             Add Free Samples To Cart
                         </button>
                     </form>
@@ -189,7 +189,7 @@
                                 <span class="{{ $order_sample_btn_class }} block w-full text-left cursor-pointer"
                                     onclick="window.location.href='/contact-us/'">Order a free measure and quote</span>
                                 <button onclick="window.location.href='{{ get_permalink($related->ID) }}'"
-                                    class="proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark py-2 hover:bg-white w-full mt-2">
+                                    class="proline-persimmon-button-woocommerce-button bg-proline-gray text-proline-dark py-2 w-full mt-2">
                                     Learn More
                                 </button>
                             </div>

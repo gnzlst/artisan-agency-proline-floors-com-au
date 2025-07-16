@@ -256,7 +256,7 @@ $menu = [
                     onclick="location.href='{{ get_permalink(get_page_by_path('cart')) }}'">
                     See Cart
                 </button>
-                {{-- <button class="bg-proline-gray text-proline-dark px-3 py-2 hover:bg-white uppercase cursor-pointer">
+                {{-- <button class="bg-proline-gray text-proline-dark px-3 py-2 uppercase cursor-pointer">
                     Order Free Samples
                 </button> --}}
             </div>
@@ -272,7 +272,7 @@ $menu = [
     <nav class="bg-proline-dark border-b-1 border-proline-silk">
         <div class="flex flex-wrap items-center justify-between mx-auto px-10 py-4">
             <div class="flex md:order-2 rtl:space-x-reverse ml-auto">
-                <button class="bg-proline-gray text-proline-dark px-3 py-2 hover:bg-white uppercase cursor-pointer mr-4"
+                <button class="bg-proline-gray text-proline-dark px-3 py-2 uppercase cursor-pointer mr-4"
                     onclick="location.href='{{ get_permalink(get_page_by_path('where-to-buy')) }}'"
                     style="margin-left: 0px;">
                     Where to Buy
@@ -328,47 +328,55 @@ $menu = [
                 <div id="mega-menu-full-cta-dropdown-{{ $index + 1 }}"
                     class="dropdown-menu-item mt-1 bg-proline-dark border-gray-200 shadow-xs hidden">
                     <div
-                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 px-10 py-5 mx-auto text-sm proline-silk-text">
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 lg:gap-8 xl:gap-12 2xl:gap-16 px-10 py-5 justify-items-start text-sm proline-silk-text"
+                        style="max-width:1100px;">
                         @foreach ($section['items'] as $subsection)
                             <div>
                                 <h2 id="title-{{ strtolower(str_replace(' ', '-', $subsection['title'] ?? $section['title'])) }}-{{ $index + 1 }}"
                                     class="mb-8 font-semibold proline-silk-text uppercase">
                                     {{ $subsection['title'] ?? $section['title'] }}
                                 </h2>
-                                <ul id="menu-{{ strtolower(str_replace(' ', '-', $subsection['title'] ?? $section['title'])) }}-{{ $index + 1 }}"
-                                    class="proline-megamenu-list space-y-4 sm:mb-4 md:mb-0 md:columns-2">
-                                    @foreach ($subsection['items'] ?? [] as $item)
-                                        <li class="mb-6">
-                                            <a href="{{ $item['url'] }}" class="hover:underline">
-                                                {{ ucwords($item['text']) }}
-                                            </a>
-                                            @if (isset($item['description']))
-                                                @if (isset($item['description_url']))
-                                                    <a href="{{ $item['description_url'] }}"
-                                                        class="block text-proline-persimmon text-xs mt-1 hover:underline">
-                                                        {{ $item['description'] }}
+                                @php
+                                    $items = $subsection['items'] ?? [];
+                                    $chunks = array_chunk($items, 4);
+                                @endphp
+                                <div class="grid grid-cols-1 md:grid-cols-{{ count($chunks) }} gap-4">
+                                    @foreach ($chunks as $chunk)
+                                        <ul class="proline-megamenu-list space-y-4 sm:mb-4 md:mb-0">
+                                            @foreach ($chunk as $item)
+                                                <li class="mb-6">
+                                                    <a href="{{ $item['url'] }}" class="hover:underline">
+                                                        {{ ucwords($item['text']) }}
                                                     </a>
-                                                @else
-                                                    <p class="text-proline-persimmon text-xs mt-1">
-                                                        {{ $item['description'] }}
-                                                    </p>
-                                                @endif
-                                            @endif
-                                            @if (isset($item['extra']))
-                                                @if (isset($item['extra_url']))
-                                                    <a href="{{ $item['extra_url'] }}"
-                                                        class="block text-proline-natural-sienna text-xs mt-1 hover:underline">
-                                                        {{ $item['extra'] }}
-                                                    </a>
-                                                @else
-                                                    <p class="text-proline-natural-sienna text-xs mt-1">
-                                                        {{ $item['extra'] }}
-                                                    </p>
-                                                @endif
-                                            @endif
-                                        </li>
+                                                    @if (isset($item['description']))
+                                                        @if (isset($item['description_url']))
+                                                            <a href="{{ $item['description_url'] }}"
+                                                                class="block text-proline-persimmon text-xs mt-1 hover:underline">
+                                                                {{ $item['description'] }}
+                                                            </a>
+                                                        @else
+                                                            <p class="text-proline-persimmon text-xs mt-1">
+                                                                {{ $item['description'] }}
+                                                            </p>
+                                                        @endif
+                                                    @endif
+                                                    @if (isset($item['extra']))
+                                                        @if (isset($item['extra_url']))
+                                                            <a href="{{ $item['extra_url'] }}"
+                                                                class="block text-proline-natural-sienna text-xs mt-1 hover:underline">
+                                                                {{ $item['extra'] }}
+                                                            </a>
+                                                        @else
+                                                            <p class="text-proline-natural-sienna text-xs mt-1">
+                                                                {{ $item['extra'] }}
+                                                            </p>
+                                                        @endif
+                                                    @endif
+                                                </li>
+                                            @endforeach
+                                        </ul>
                                     @endforeach
-                                </ul>
+                                </div>
                             </div>
                         @endforeach
                     </div>

@@ -4,11 +4,11 @@ $footerMenu = [
         'title' => 'Quick Links',
         'items' => [
             [
-                'text' => 'Shop All',
+                'text' => 'Order Free Luxury Vinyl Plank Samples',
                 'url' => '/shop-all-luxury-vinyl-plank/',
             ],
             [
-                'text' => 'Order Free Samples',
+                'text' => 'Order Free Hybrid Flooring Samples',
                 'url' => '/shop-all-hybrid-flooring/',
             ],
             [
@@ -102,10 +102,10 @@ $footerMenu = [
                 'text' => 'Our Team',
                 'url' => '/meet-the-team/',
             ],
-            [
-                'text' => 'Mission Statement',
-                'url' => '#',
-            ],
+            // [
+            //     'text' => 'Mission Statement',
+            //     'url' => '#',
+            // ],
         ],
     ],
 ];

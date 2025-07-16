@@ -294,7 +294,6 @@ a:where(:not(.wp-element-button)) {
   line-height: 1.2;
   margin-bottom: 1rem;
   font-family: 'Maxeville', sans-serif !important;
-  font-weight: bold !important;
 }
 
 .proline-section-large-text {
@@ -559,4 +558,13 @@ a:where(:not(.wp-element-button)) {
 
 .wp-block-post-title a {
   color: var(--color-proline-dark) !important;
+}
+
+.woocommerce-order,
+.woocommerce-order-received,
+.woocommerce-thankyou-order-received {
+  background: var(--color-proline-linen);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
 }
