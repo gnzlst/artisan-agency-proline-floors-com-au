@@ -167,7 +167,7 @@ a:where(:not(.wp-element-button)) {
   left: 0;
   width: 1rem;
   height: 1rem;
-  background-image: url('../images/layout/bullet-iso-green.png');
+  background-image: url('../images/layout/bullet-iso-granite.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -298,7 +298,7 @@ a:where(:not(.wp-element-button)) {
 }
 
 .proline-section-large-text {
-  font-size: 2rem;
+  font-size: 3rem !important;
   line-height: 1.2;
   margin-bottom: 1rem;
   font-family: 'Maxeville', sans-serif !important;
