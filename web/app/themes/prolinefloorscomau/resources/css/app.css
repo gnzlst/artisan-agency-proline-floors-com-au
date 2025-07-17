@@ -63,7 +63,6 @@ h4,
 h5,
 h6 {
   font-family: 'Maxeville', sans-serif;
-  font-weight: bold !important;
 }
 
 .h-4 {
@@ -301,7 +300,6 @@ a:where(:not(.wp-element-button)) {
   line-height: 1.2;
   margin-bottom: 1rem;
   font-family: 'Maxeville', sans-serif !important;
-  font-weight: bold !important;
 }
 
 .proline-section-phthalo-green {
@@ -562,4 +560,38 @@ a:where(:not(.wp-element-button)) {
 
 .woocommerce > .woocommerce-order {
   @apply py-20 px-10 sm:px-10;
+}
+
+.wc-block-components-product-image img {
+  width: 90% !important;
+}
+
+.e-content {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-proline-dark);
+}
+
+.e-content h1, .e-content h2, .e-content h3, .e-content h4, .e-content h5, .e-content h6 {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+.e-content h1 {
+  font-size: 2.5rem;
+}
+.e-content h2 {
+  font-size: 2rem;
+}
+.e-content h3 {
+  font-size: 1.5rem;
+}
+.e-content h4 {
+  font-size: 1.25rem;
+}
+.e-content h5 {
+  font-size: 1.1rem;
+}
+.e-content h6 {
+  font-size: 1rem;
 }

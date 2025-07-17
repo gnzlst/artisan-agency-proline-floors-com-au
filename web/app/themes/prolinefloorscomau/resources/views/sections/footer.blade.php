@@ -178,14 +178,14 @@ $footerMenu = [
                     Proline
                     Floors. All Rights Reserved.</span>
 
-                <div class="flex space-x-5 rtl:space-x-reverse">
+                {{-- <div class="flex space-x-5 rtl:space-x-reverse">
                     <a href="#" class="proline-silk-text hover:text-gray-900 dark:hover:text-white text-sm">Privacy
                         Policy</a>
                     <a href="#" class="proline-silk-text hover:text-gray-900 dark:hover:text-white text-sm">Terms of
                         Use</a>
                     <a href="#" class="proline-silk-text hover:text-gray-900 dark:hover:text-white text-sm">Cookie
                         Policy</a>
-                </div>
+                </div> --}}
 
                 <div class="flex space-x-5 rtl:space-x-reverse items-middle">
                     <a href="https://www.facebook.com/prolinefloorsaustralia"
