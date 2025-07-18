@@ -288,7 +288,7 @@ a:where(:not(.wp-element-button)) {
 }
 
 .proline-section-jumbo-text {
-  font-size: 5.1rem !important;
+  font-size: 4.5rem !important;
   max-width: 100% !important;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -562,7 +562,7 @@ a:where(:not(.wp-element-button)) {
   @apply py-20 px-10 sm:px-10;
 }
 
-.wc-block-components-product-image img {
+.attachment-woocommerce_single {
   width: 90% !important;
 }
 
@@ -572,7 +572,12 @@ a:where(:not(.wp-element-button)) {
   color: var(--color-proline-dark);
 }
 
-.e-content h1, .e-content h2, .e-content h3, .e-content h4, .e-content h5, .e-content h6 {
+.e-content h1,
+.e-content h2,
+.e-content h3,
+.e-content h4,
+.e-content h5,
+.e-content h6 {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.2;
