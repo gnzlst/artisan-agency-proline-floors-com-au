@@ -600,3 +600,7 @@ a:where(:not(.wp-element-button)) {
 .e-content h6 {
   font-size: 1rem;
 }
+
+.wc-block-components-quantity-selector {
+  display: none !important;
+}
