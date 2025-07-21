@@ -250,7 +250,9 @@ document.addEventListener('DOMContentLoaded', function () {
 JS);
 });
 
+
 add_action('woocommerce_check_cart_items', 'limit_unique_sample_products');
+add_action('woocommerce_checkout_process', 'block_checkout_if_sample_limit_exceeded');
 
 function limit_unique_sample_products()
 {
@@ -263,5 +265,18 @@ function limit_unique_sample_products()
     $sample_count = count($sample_items);
     if ($sample_count > 3) {
         wc_add_notice('You can only request up to 3 different sample products per order.', 'error');
+    }
+}
+
+function block_checkout_if_sample_limit_exceeded() {
+    $sample_items = [];
+    foreach (WC()->cart->get_cart_contents() as $cart_item) {
+        $product_id = $cart_item['product_id'];
+        $sample_items[$product_id] = true;
+    }
+    $sample_count = count($sample_items);
+    if ($sample_count > 3) {
+        wc_add_notice('You can only request up to 3 different sample products per order.', 'error');
+        throw new Exception('You can only request up to 3 different sample products per order.');
     }
 }
